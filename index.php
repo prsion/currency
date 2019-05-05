@@ -9,9 +9,9 @@ $courses=json_decode($data, true);
  */
 require __DIR__ . '/vendor/autoload.php';
 $func=new liw\app\Func();
-$func->run();
 
-//print_arr($courses);
+$func->run();
+//$func->print_arr($courses);
 
 		foreach ($courses as $curr) {
 
