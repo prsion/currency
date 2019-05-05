@@ -1,0 +1,19 @@
+{
+    "name": "prsion/mm",
+    "description": "test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "prsion",
+            "email": "prsion@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+           "liw\\": ""
+        }
+
+    }
+}

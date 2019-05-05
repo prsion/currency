@@ -1,7 +1,16 @@
 <?php
+
 define('LINK', 'https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11');
 $data=file_get_contents(LINK);
 $courses=json_decode($data, true);
+
+/**
+ * autoloader
+ */
+require __DIR__ . '/vendor/autoload.php';
+$func=new liw\app\Func();
+$func->run();
+
 //print_arr($courses);
 
 		foreach ($courses as $curr) {
@@ -36,6 +45,8 @@ var_dump($arr_curr);
 	<!-- <input type="text"  name="valuta" placeholder="curs"><br> -->
 	<input type='submit' value='Convert to UAH'>
 </form>
+
+
 
 <?php
 if (isset($_GET['submit'])) {
